@@ -25,6 +25,10 @@ SOFTWARE.
 #ifndef URL_H
 #define URL_H
 
+#define URL_H_VERSION_MAJOR 1
+#define URL_H_VERSION_MINOR 0
+#define URL_H_VERSION_PATCH 0
+
 #include <stdint.h>
 #include <stdbool.h>
 

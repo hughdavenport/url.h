@@ -5,7 +5,7 @@
 
 This repo contains a [stb-style](https://github.com/nothings/stb/blob/master/docs/stb_howto.txt) header only library. You only need the [url.h](https://github.com/hughdavenport/url.h/raw/refs/heads/main/url.h) file.
 
-URL's are defined in a few places. There is a ["living standard"](https://url.spec.whatwg.org/#urls), and [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). This implementation mainly looked at the RFC.
+URL's are defined in a few places. There is a ["living standard"](https://url.spec.whatwg.org/#urls), [RFC 1738](https://datatracker.ietf.org/doc/html/rfc1738) and [RFC 3986](https://datatracker.ietf.org/doc/html/rfc3986). This implementation mainly looked at the RFCs.
 
 This library was developed during a [YouTube series](https://www.youtube.com/watch?v=dqw7B6eR9P8&list=PL5r5Q39GjMDfetFdGmnhjw1svsALW1HIY) where I implement [bittorrent from scratch](https://github.com/hughdavenport/codecrafters-bittorrent-c), which drove me to create the following libraries:
 - Bencode decoding in [bencode.h](https://github.com/hughdavenport/bencode.h/raw/refs/heads/main/bencode.h)

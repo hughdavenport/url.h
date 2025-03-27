@@ -3,12 +3,18 @@
 
 int main(int argc, char **argv) {
     URL url = {0};
+    if (argc < 2) {
+        fprintf(stderr, "Usage: %s url\n", argv[0]);
+        return 1;
+    }
     if (!parse_url(argv[1], argv[1] + strlen(argv[1]), &url)) {
+        fprintf(stderr, "Could not parse `%s`\n", argv[1]);
         return 1;
     }
 
     int sock = connect_url(&url);
     if (sock == -1) {
+        fprintf(stderr, "Could not connect to `%s`\n", argv[1]);
         return 1;
     }
 

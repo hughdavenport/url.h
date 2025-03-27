@@ -22,6 +22,7 @@ An example file is shown below.
 
 int main(int argc, char **argv) {
     URL url = {0};
+    if (argc < 2) return 1;
     if (!parse_url(argv[1], argv[1] + strlen(argv[1]), &url)) {
         return 1;
     }
